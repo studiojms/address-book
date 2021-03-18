@@ -1,0 +1,42 @@
+.contact-details {
+  width: 100%;
+  background-color: #e8e8e8;
+}
+
+.contact-details__placeholder {
+  padding: .5rem;
+}
+
+.contact-details__fetch-failure {
+  padding: .5rem;
+  background-color: #e10042;
+  color: white;
+}
+
+.contact-details__data {
+  padding: .5rem;
+}
+
+.contact-details__item {
+  margin-bottom: 1.5rem;
+}
+
+.contact-details__item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-details__item-title {
+  display: block;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #919191;
+  padding-bottom: .5rem;
+  color: #919191;
+}
+
+.contact-details__item-data {
+  display: block;
+}
+
+.contact-details__address-line {
+  display: block;
+}

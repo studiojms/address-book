@@ -1,0 +1,10 @@
+.search-contacts {
+  margin-bottom: .5rem;
+}
+
+.search-contacts__search-failure {
+  margin-top: .5rem;
+  padding: .5rem;
+  background-color: #e10042;
+  color: white;
+}

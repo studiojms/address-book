@@ -1,0 +1,66 @@
+/test-results.xml
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+### Devskiller entries
+###
+### Please do not add anything below this line, your changes will be overwritten
+###
+*.iws
+*.launch
+.externalToolBuilders/
+__MACOSX/
+.idea/
+.nb-gradle/
+.project
+.settings/
+atlassian-ide-plugin.xml
+nbactions.xml
+nbbuild/
+nbdist/
+nbproject/private/
+node_modules
+.npm-debug.log
+tmp
+
+
+### *** required entries below ***
+###
+### Please do not add anything below this line, your changes will be overwritten
+###
+.history/
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/490Fgg6uPJedVf4qVGHhl7
+!.vscode/extensions.json
+*.code-workspace
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide

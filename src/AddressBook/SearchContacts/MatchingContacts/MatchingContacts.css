@@ -1,0 +1,16 @@
+.matching-contacts {
+  position: absolute;
+  margin: 0;
+  border: 1px solid #919191;
+  padding: 0;
+  background-color: white;
+  list-style-type: none;
+}
+
+.matching-contacts__item {
+  padding: .5rem;
+}
+
+.matching-contacts__item--highlighted {
+  background-color: #e8e8e8;
+}
