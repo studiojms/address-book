@@ -11,7 +11,9 @@ const propTypes = {
 const PhraseInput = ({ phrase, onPhraseChange, downshiftGetInputProps }) => {
   const ref = useRef();
 
-  // TODO: Something is missing here
+  useEffect(() => {
+    ref.current.focus();
+  }, []);
 
   const onChange = (event) => onPhraseChange(event.target.value);
 
@@ -19,7 +21,7 @@ const PhraseInput = ({ phrase, onPhraseChange, downshiftGetInputProps }) => {
     <input
       {...downshiftGetInputProps({
         className: 'phrase-input',
-        placeholder: 'To show contact\'s details, type its name…',
+        placeholder: "To show contact's details, type its name…",
         value: phrase,
         onChange,
         ref,
