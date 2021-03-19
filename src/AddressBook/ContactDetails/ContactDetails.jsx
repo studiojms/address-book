@@ -11,17 +11,9 @@ const propTypes = {
   hasFailedToFetch: PropTypes.bool,
 };
 
-const FetchFailure = () => (
-  <div className="contact-details__fetch-failure">
-    Failed to fetch Contact Details!
-  </div>
-);
+const FetchFailure = () => <div className="contact-details__fetch-failure">Failed to fetch Contact Details!</div>;
 
-const DataPlaceholder = () => (
-  <div className="contact-details__placeholder">
-    Contact Details will appear here…
-  </div>
-);
+const DataPlaceholder = () => <div className="contact-details__placeholder">Contact Details will appear here…</div>;
 
 const Data = ({ data }) => (
   <div className="contact-details__data">
@@ -36,7 +28,13 @@ const Data = ({ data }) => (
     {/* TODO: Something is wrong here */}
     <div className="contact-details__item contact-details__item--address">
       <span className="contact-details__item-title">Address</span>
-      <span className="contact-details__item-data">{data.addressLines[0]}</span>
+      <span className="contact-details__item-data">
+        {data.addressLines.map((address, idx) => (
+          <span key={idx} className="contact-details__address-line">
+            {address}
+          </span>
+        ))}
+      </span>
     </div>
   </div>
 );
