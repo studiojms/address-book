@@ -21,10 +21,9 @@ export const updateSearchPhraseFailure = () => ({
   type: SEARCH_CONTACTS_UPDATE_FAILURE,
 });
 
-// TODO: Something is wrong here
 export const selectMatchingContact = (matchingContact) => ({
   type: SEARCH_CONTACTS_SELECT,
   payload: {
-    matchingContact: {},
+    matchingContact
   },
 });

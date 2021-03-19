@@ -38,7 +38,7 @@ export default function searchContactsReducer(state = initialState, action) {
       return {
         ...state,
         phrase: payload.matchingContact.value,
-        //matchingContacts: [],
+        matchingContacts: [],
       };
 
     default:
