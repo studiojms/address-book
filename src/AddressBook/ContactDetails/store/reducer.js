@@ -13,6 +13,7 @@ export default function contactDetailsReducer(state = initialState, action) {
     case CONTACT_DETAILS_FETCH:
       return {
         ...state,
+        data: null,
         error: false,
       };
 
