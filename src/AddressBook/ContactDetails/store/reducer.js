@@ -22,10 +22,10 @@ export default function contactDetailsReducer(state = initialState, action) {
         data: payload.contactDetails,
       };
 
-    // TODO: Something is missing here
     case CONTACT_DETAILS_FETCH_FAILURE:
       return {
         ...state,
+        error: true
       };
 
     default:
